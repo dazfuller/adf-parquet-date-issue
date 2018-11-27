@@ -16,7 +16,8 @@ namespace sodemo
                 {
                     var dataFields = reader.Schema.GetDataFields();
                     
-                    Console.WriteLine($"Column [{dataFields[1].Name}]: {dataFields[1].DataType}");
+                    Console.WriteLine($"Timestamp column: [{dataFields[1].Name}]: {dataFields[1].DataType}");
+                    Console.WriteLine($"Date column:      [{dataFields[2].Name}]: {dataFields[2].DataType}");
 
                     for (var i = 0; i < reader.RowGroupCount; i++)
                     {
